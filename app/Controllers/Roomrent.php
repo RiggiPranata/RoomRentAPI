@@ -18,21 +18,21 @@ class Roomrent extends BaseController
     public function index()
     {
         //READ menampilkan data berdasarkan column dan sort(ASC,DESC)
-        $data = $this->model->orderBy(,)->findAll();
+        $data = $this->model->orderBy('ruangan_id', 'ASC')->findAll();
         return $this->respond($data, 200);
     }
 
-    
-    public function show($id=null, $name=null){
-        
+
+    public function show($userId = null, $roomId = null)
+    {
+
         //Mencari data berdasarkan ID bisa juga dengan nama
-        $data = $this->model->where('id', $id |  'name', $name)->findAll();
-        if($data){
+        $data = $this->model->where('user_id', $userId |  'room_id', $roomId)->findAll();
+        if ($data) {
             return $this->respond($data, 200);
-        }else{
-            return $this->failNotFound("Data tidak ditemukan untuk ID $id atau Nama $nama");
+        } else {
+            return $this->failNotFound("Data tidak ditemukan untuk ID $userId atau Nama $roomId");
         }
-        
     }
 
     public function create()
@@ -41,20 +41,20 @@ class Roomrent extends BaseController
         //     //data yang diperlukan untuk meminjam ruangan
 
         // ];
-        
+
         $data = $this->request->getPost();
 
         // $this->model->save($data);
 
-        if(!$this->model->save($data)){
+        if (!$this->model->save($data)) {
             return $this->fail($this->model->errors());
         }
 
         $responses = [
-            'status'=>201,
-            'error'=>null,
-            'message'=>[
-                'success'=>'Berhasil Meminjam Ruangan'
+            'status' => 201,
+            'error' => null,
+            'message' => [
+                'success' => 'Berhasil Meminjam Ruangan'
             ]
         ];
         return $this->respond($responses);

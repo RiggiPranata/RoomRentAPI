@@ -15,6 +15,7 @@ class FilterJwt implements FilterInterface
 {
     use RequestTrait;
 
+
     public function before(RequestInterface $request, $arguments = null)
     {
         $header = $request->getServer('HTTP_AUTHORIZATION');

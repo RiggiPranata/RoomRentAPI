@@ -32,35 +32,53 @@ class Login extends BaseController
                 ]
             ],
         ];
+
         $validation->setRule($aturan);
         if (!$validation->withRequest($this->request)->run()) {
             return $this->fail($validation->getErrors());
         }
-    }
+        $model = new Model_login();
 
+        $email = $this->request->getVar('email');
+        $password = $this->request->getVar('password');
 
-    public function create()
-    {
-        // $data = [
-        //     //data yang diperlukan untuk meminjam ruangan
-
-        // ];
-
-        $data = $this->request->getPost();
-
-        // $this->model->save($data);
-
-        if (!$this->model->save($data)) {
-            return $this->fail($this->model->errors());
+        $data = $model->getEmail($email);
+        if ($data['password'] != md5($password)) {
+            return $this->fail("password tidak sesuai");
         }
-
+        helper('jwt');
         $response = [
-            'status' => 201,
-            'error' => null,
-            'messages' => [
-                'success' => 'Berhasil Membuat User'
-            ]
+            'message' => 'otentikasi berhasil dilakukan',
+            'data' => $data,
+            'access_token' => createJWT($email)
         ];
         return $this->respond($response);
     }
+
+
+
+    // public function create()
+    // {
+    //     // $data = [
+    //     //     //data yang diperlukan untuk meminjam ruangan
+
+    //     // ];
+
+    //     $data = $this->request->getPost();
+
+    //     // $this->model->save($data);
+
+    //     if (!$this->model->save($data)) {
+    //         return $this->fail($this->model->errors());
+    //     }
+
+    //     $response = [
+    //         'status' => 201,
+    //         'error' => null,
+    //         'messages' => [
+    //             'success' => 'Berhasil Membuat User'
+    //         ]
+    //     ];
+    //     return $this->respond($response);
+    // }
 }

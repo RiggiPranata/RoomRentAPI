@@ -24,7 +24,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'autentication' => FilterJwt::class,
+        'auth' => FilterJwt::class
     ];
 
     /**
@@ -71,7 +71,7 @@ class Filters extends BaseConfig
      * @var array
      */
     public $filters = [
-        'autentication' => [
+        'auth' => [
             'before' => [
                 'login/*',
                 'login',

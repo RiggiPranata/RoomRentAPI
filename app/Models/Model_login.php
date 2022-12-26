@@ -22,23 +22,4 @@ class Model_login extends Model
         }
         return $data;
     }
-
-    // protected $validationRules = [
-    //     //field apa saja yang perlu divalidasi
-    //     'email' => 'required|valid_email',
-    //     'password' => 'required|min_length[6]'
-
-    // ];
-
-    // protected $validationMessages = [
-    //     //pesan jika rule validation tidak terpenuhi
-    //     'user_email' => [
-    //         'required' => 'Email harus diisi',
-    //         'valid_email' => 'Masukan E-mail yang valid'
-    //     ],
-    //     'password' => [
-    //         'required' => 'Password harus diisi',
-    //         'min_length' => 'Password harus lebih dari 6 character'
-    //     ]
-    // ];
 }

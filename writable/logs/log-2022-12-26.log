@@ -1,0 +1,195 @@
+CRITICAL - 2022-12-26 07:08:57 --> Class 'Config\FilterJwt' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:10:56 --> Class 'Config\FilterJwt' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:11:18 --> Class 'Config\FilterJwt' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:18:45 --> autentication filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 493.
+ 1 SYSTEMPATH\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('autentication')
+ 2 SYSTEMPATH\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('registration')
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('registration', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:41:47 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 17
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(17): Firebase\JWT\JWT::decode(null, '1n!4daLaHR4h@s!aK3y', [...])
+ 2 APPPATH\Filters\FilterJwt.php(24): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:00:32 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode([...], '1n!4daLaHR4h@s!aK3y', [...])
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:01:18 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode([...], '1n!4daLaHR4h@s!aK3y', 'HS256')
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:02:17 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 22
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(22): Firebase\JWT\JWT::decode([...], '1n!4daLaHR4h@s!aK3y', 'HS256')
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:02:48 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 22
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(22): Firebase\JWT\JWT::decode([...], '1n!4daLaHR4h@s!aK3y', 'HS256')
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:03:56 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:06:58 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:07:12 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:07:59 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:08:49 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(23): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:09:35 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(23): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:10:16 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:10:21 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 21
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(21): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(22): validationJWT([...])
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:26:55 --> Undefined property: App\Filters\FilterJwt::$request
+in APPPATH\Filters\FilterJwt.php on line 21.
+ 1 APPPATH\Filters\FilterJwt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Filters\\FilterJwt::$request', 'APPPATH\\Filters\\FilterJwt.php', 21, [...])
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:31:56 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 18
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(18): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(24): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:32:22 --> syntax error, unexpected '}', expecting ';' or ','
+in APPPATH\Helpers\jwt_helper.php on line 12.
+ 1 APPPATH\Filters\FilterJwt.php(22): helper([...])
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:32:40 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 19
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(24): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:33:23 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 19
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(24): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:33:46 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 19
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(24): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:34:26 --> 'break' not in the 'loop' or 'switch' context
+in APPPATH\Helpers\jwt_helper.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-26 09:34:54 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 19
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(24): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:35:25 --> 'break' not in the 'loop' or 'switch' context
+in APPPATH\Filters\FilterJwt.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-26 09:35:34 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\app\Helpers\jwt_helper.php on line 19
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Filters\FilterJwt.php(24): validationJWT(null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

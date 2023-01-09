@@ -36,8 +36,35 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 // <!-- $routes->get('/', 'Home::index'); -->
-$routes->resource('registration');
-$routes->resource('login');
+
+$routes->get('/', 'Home::index', ['filter' => 'otentikasi']);
+$routes->get('me', 'Me::index', ['filter' => 'otentikasi']);
+
+$routes->group("api", function ($routes) {
+    $routes->post('register', 'Register::index');
+    $routes->post('login', 'Login::index');
+    $routes->group('users', ['filter' => 'otentikasi'], function ($routes) {
+        $routes->get("/", 'User::index');
+        $routes->get("(:any)", "User::show/$1");
+        $routes->put("(:any)", "User::update/$1");
+    });
+    $routes->group('rooms', ['filter' => 'otentikasi'], function ($routes) {
+        $routes->get("/", 'Room::index');
+        $routes->get("(:any)", "Room::show/$1");
+        $routes->post("/", "Room::create");
+        $routes->put("(:any)", "Room::update/$1");
+        $routes->delete("(:any)", "Room::delete/$1");
+    });
+    $routes->group('rents', ['filter' => 'otentikasi'], function ($routes) {
+        $routes->get("/", 'Rent::index');
+        $routes->get("(:any)", "Rent::show/$1");
+    });
+});
+
+
+// $routes->resource('registration');
+// $routes->resource('login');
+// $routes->post('/login', 'Login::index');
 
 /*
  * --------------------------------------------------------------------

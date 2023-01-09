@@ -8,7 +8,7 @@ use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
-use App\Filters\FilterJwt;
+use App\Filters\Auth;
 
 class Filters extends BaseConfig
 {
@@ -24,7 +24,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'auth' => FilterJwt::class
+        'otentikasi' => Auth::class,
     ];
 
     /**
@@ -40,7 +40,7 @@ class Filters extends BaseConfig
             // 'invalidchars',
         ],
         'after' => [
-            'toolbar',
+            // 'toolbar',
             // 'honeypot',
             // 'secureheaders',
         ],
@@ -72,11 +72,14 @@ class Filters extends BaseConfig
      */
     public $filters = [
         'auth' => [
-            'before' => [
+            'otentikasi' => [
                 'login/*',
                 'login',
-                'registration/*',
-                'registration',
+                'register/*',
+                'register',
+                'home',
+                'home/*',
+                'register/show/*'
             ]
         ]
     ];

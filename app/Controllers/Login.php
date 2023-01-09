@@ -3,82 +3,116 @@
 namespace App\Controllers;
 
 use CodeIgniter\API\ResponseTrait;
-use App\Models\Model_login;
+use CodeIgniter\RESTful\ResourceController;
+use App\Models\UserModel;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 
-class Login extends BaseController
+class Login extends ResourceController
 {
+    /**
+     * Return an array of resource objects, themselves in array format
+     *
+     * @return mixed
+     */
     use ResponseTrait;
-
-    public function __construct()
-    {
-        $this->model = new Model_login();
-    }
-
     public function index()
     {
-        $validation = \Config\Services::validation();
-        $aturan = [
-            'email' => [
-                'rules' => 'required|valid_email',
-                'errors' => [
-                    'required' => 'Silakan masukan email',
-                    'valid_email' => 'Silakan masukan email yang valid'
-                ]
-            ],
-            'password' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Silakan masukan password'
-                ]
-            ],
+        helper(['form']);
+        $rules = [
+            'email' => 'required|valid_email',
+            'password' => 'required|min_length[6]'
         ];
+        if (!$this->validate($rules)) return $this->fail($this->validator->getErrors());
+        $model = new UserModel();
+        $user = $model->where("email", $this->request->getVar('email'))->first();
+        if (!$user) return $this->failNotFound('Email Not Found');
 
-        $validation->setRule($aturan);
-        if (!$validation->withRequest($this->request)->run()) {
-            return $this->fail($validation->getErrors());
-        }
-        $model = new Model_login();
+        $verify = password_verify($this->request->getVar('password'), $user['password']);
+        if (!$verify) return $this->fail('Wrong Password');
 
-        $email = $this->request->getVar('email');
-        $password = $this->request->getVar('password');
+        $waktuRequest = time();
+        $waktuToken = getenv('JWT_TIME_TO_LIVE');
+        $waktuExpired = $waktuRequest + $waktuToken;
 
-        $data = $model->getEmail($email);
-        if ($data['password'] != md5($password)) {
-            return $this->fail("password tidak sesuai");
-        }
-        helper('jwt');
-        $response = [
-            'message' => 'otentikasi berhasil dilakukan',
-            'data' => $data,
-            'access_token' => createJWT($email)
-        ];
-        return $this->respond($response);
+        $key = getenv('JWT_SECRET_KEY');
+        $payload = array(
+            "iat" => 1356999524,
+            "nbf" => 1357000000,
+            "uid" => $user['id'],
+            "email" => $user['email'],
+            "users" => [
+                'name' => $user['nama'],
+                'kelas' => $user['kelas'],
+                'semester' => $user['semester'],
+                'jurusan' => $user['jurusan'],
+                'no_telepon' => $user['no_telepon'],
+                'email' => $user['email'],
+            ]
+        );
+
+        $token = JWT::encode($payload, $key, "HS256");
+
+        return $this->respond($token);
     }
 
+    /**
+     * Return the properties of a resource object
+     *
+     * @return mixed
+     */
+    public function show($id = null)
+    {
+        //
+    }
 
+    /**
+     * Return a new resource object, with default properties
+     *
+     * @return mixed
+     */
+    public function new()
+    {
+        //
+    }
 
-    // public function create()
-    // {
-    //     // $data = [
-    //     //     //data yang diperlukan untuk meminjam ruangan
+    /**
+     * Create a new resource object, from "posted" parameters
+     *
+     * @return mixed
+     */
+    public function create()
+    {
+        //
+    }
 
-    //     // ];
+    /**
+     * Return the editable properties of a resource object
+     *
+     * @return mixed
+     */
+    public function edit($id = null)
+    {
+        //
+    }
 
-    //     $data = $this->request->getPost();
+    /**
+     * Add or update a model resource, from "posted" properties
+     *
+     * @return mixed
+     */
+    public function update($id = null)
+    {
+        //
+    }
 
-    //     // $this->model->save($data);
-
-    //     if (!$this->model->save($data)) {
-    //         return $this->fail($this->model->errors());
-    //     }
-
-    //     $response = [
-    //         'status' => 201,
-    //         'error' => null,
-    //         'messages' => [
-    //             'success' => 'Berhasil Membuat User'
-    //         ]
-    //     ];
-    //     return $this->respond($response);
-    // }
+    /**
+     * Delete the designated resource object from the model
+     *
+     * @return mixed
+     */
+    public function delete($id = null)
+    {
+        //
+    }
 }

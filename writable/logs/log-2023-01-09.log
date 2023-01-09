@@ -1,0 +1,411 @@
+CRITICAL - 2023-01-09 09:41:07 --> Class 'Config\Auth\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 09:41:33 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 09:54:13 --> Class 'APP\Models\UserModel' not found
+in APPPATH\Controllers\Register.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Register->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 09:54:54 --> Class 'APP\Models\UserModel' not found
+in APPPATH\Controllers\Register.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Register->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 09:57:28 --> Class 'APP\Models\UserModel' not found
+in APPPATH\Controllers\Register.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Register->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 09:58:15 --> Class 'APP\Models\UserModel' not found
+in APPPATH\Controllers\Register.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Register->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 10:19:12 --> Class 'APP\Models\UserModel' not found
+in APPPATH\Controllers\Login.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 11:25:13 --> Undefined offset: 1
+in APPPATH\Filters\Auth.php on line 36.
+ 1 APPPATH\Filters\Auth.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Filters\\Auth.php', 36, [...])
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('me', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 11:27:47 --> Undefined offset: 2
+in APPPATH\Filters\Auth.php on line 36.
+ 1 APPPATH\Filters\Auth.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 2', 'APPPATH\\Filters\\Auth.php', 36, [...])
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('me', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 11:29:35 --> Undefined variable: decoded
+in APPPATH\Filters\Auth.php on line 44.
+ 1 APPPATH\Filters\Auth.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: decoded', 'APPPATH\\Filters\\Auth.php', 44, [...])
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('me', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 11:53:34 --> key must be a string when using hmac
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 232.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(202): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjEzNTY5OTk1MjQsIm5iZiI6MTM1NzAwMDAwMCwidWlkIjoiNCIsImVtYWlsIjoicmlnZ2lAZ21haWwuY29tIn0', Object(Firebase\JWT\Key), 'HS256')
+ 2 APPPATH\Controllers\Login.php(47): Firebase\JWT\JWT::encode([...], Object(Firebase\JWT\Key), 'HS256')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 12:07:38 --> auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 12:08:49 --> auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 12:08:52 --> auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 12:39:05 --> Undefined variable: id
+in APPPATH\Config\Routes.php on line 43.
+ 1 APPPATH\Config\Routes.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Config\\Routes.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(787): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 12:53:17 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1600.
+ 1 SYSTEMPATH\BaseModel.php(1600): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(854): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(721): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Register.php(121): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Register->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 12:53:48 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1600.
+ 1 SYSTEMPATH\BaseModel.php(1600): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(854): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(721): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Register.php(121): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Register->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 12:54:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1600.
+ 1 SYSTEMPATH\BaseModel.php(1600): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(854): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(721): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Register.php(121): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Register->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 13:30:34 --> mysqli_sql_exception: Table 'rooms' already exists in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `r...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 D:\xampp\htdocs\RoomRentAPI\app\Database\Migrations\2023-01-09-191957_Rooms.php(35): CodeIgniter\Database\Forge->createTable('rooms')
+#5 D:\xampp\htdocs\RoomRentAPI\system\Database\MigrationRunner.php(869): App\Database\Migrations\Rooms->up()
+#6 D:\xampp\htdocs\RoomRentAPI\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\xampp\htdocs\RoomRentAPI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\RoomRentAPI\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\RoomRentAPI\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\RoomRentAPI\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 D:\xampp\htdocs\RoomRentAPI\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 D:\xampp\htdocs\RoomRentAPI\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+CRITICAL - 2023-01-09 14:08:25 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$OR
+in APPPATH\Controllers\Room.php on line 29.
+ 1 APPPATH\Controllers\Room.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$OR', 'APPPATH\\Controllers\\Room.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->show('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:11:40 --> Call to undefined method App\Models\RoomModel::getResult
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\Room.php(29): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->show('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:12:11 --> Call to undefined method App\Models\RoomModel::getResult
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\Room.php(29): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->show('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:12:48 --> Call to undefined method App\Models\RoomModel::getResult
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\Room.php(29): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->show('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:14:27 --> Undefined variable: builder
+in APPPATH\Controllers\Room.php on line 29.
+ 1 APPPATH\Controllers\Room.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH\\Controllers\\Room.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->show('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:15:57 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::__construct(), 0 passed in D:\xampp\htdocs\RoomRentAPI\app\Controllers\Room.php on line 29 and at least 2 expected
+in SYSTEMPATH\Database\BaseBuilder.php on line 280.
+ 1 APPPATH\Controllers\Room.php(29): CodeIgniter\Database\BaseBuilder->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->show('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:18:53 --> syntax error, unexpected ']'
+in APPPATH\Controllers\Room.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Room.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Room')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Room')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Room')
+ 5 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\Room', true)
+ 6 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:28:27 --> Undefined index: is_ready
+in APPPATH\Controllers\Room.php on line 112.
+ 1 APPPATH\Controllers\Room.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: is_ready', 'APPPATH\\Controllers\\Room.php', 112, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 14:29:08 --> mysqli_sql_exception: Unknown column 'rooms.id' in 'where clause' in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `rooms` ...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `rooms` ...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `rooms` ...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `rooms` ...', Array, false)
+#4 D:\xampp\htdocs\RoomRentAPI\system\Model.php(362): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(887): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\xampp\htdocs\RoomRentAPI\system\Model.php(721): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\xampp\htdocs\RoomRentAPI\app\Controllers\Room.php(114): CodeIgniter\Model->update('1', Array)
+#8 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(925): App\Controllers\Room->update('1')
+#9 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+#10 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\RoomRentAPI\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\RoomRentAPI\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 14:29:08 --> Unknown column 'rooms.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `rooms` SET `room_name` = :room_name:, `floor` = :floor:, `building` = :building:, `is_ready` = :is_ready:
+WHERE `rooms`.`id` IN :rooms.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(362): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(887): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(721): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Room.php(114): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->update('1')
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 14:31:07 --> mysqli_sql_exception: Unknown column 'rooms.id' in 'where clause' in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `rooms` ...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `rooms` ...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `rooms` ...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `rooms` ...', Array, false)
+#4 D:\xampp\htdocs\RoomRentAPI\system\Model.php(362): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(887): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\xampp\htdocs\RoomRentAPI\system\Model.php(721): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\xampp\htdocs\RoomRentAPI\app\Controllers\Room.php(114): CodeIgniter\Model->update('1', Array)
+#8 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(925): App\Controllers\Room->update('1')
+#9 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+#10 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\RoomRentAPI\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\RoomRentAPI\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 14:31:08 --> Unknown column 'rooms.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `rooms` SET `room_name` = :room_name:, `floor` = :floor:, `building` = :building:, `is_ready` = :is_ready:
+WHERE `rooms`.`id` IN :rooms.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(362): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(887): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(721): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Room.php(114): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->update('1')
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 14:31:44 --> mysqli_sql_exception: Unknown column 'rooms.id' in 'where clause' in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `rooms` ...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `rooms` ...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `rooms` ...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `rooms` ...', Array, false)
+#4 D:\xampp\htdocs\RoomRentAPI\system\Model.php(362): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(887): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\xampp\htdocs\RoomRentAPI\system\Model.php(721): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\xampp\htdocs\RoomRentAPI\app\Controllers\Room.php(114): CodeIgniter\Model->update('1', Array)
+#8 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(925): App\Controllers\Room->update('1')
+#9 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+#10 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\RoomRentAPI\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\RoomRentAPI\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 14:31:44 --> Unknown column 'rooms.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'1\'
+WHERE `rooms`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `rooms` SET `room_name` = :room_name:, `floor` = :floor:, `building` = :building:, `is_ready` = :is_ready:
+WHERE `rooms`.`id` IN :rooms.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(362): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(887): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(721): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Room.php(114): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->update('1')
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 14:34:49 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `rooms` ...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `rooms` ...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `rooms` ...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `rooms` ...', Array, false)
+#4 D:\xampp\htdocs\RoomRentAPI\system\Model.php(362): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(887): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\xampp\htdocs\RoomRentAPI\system\Model.php(721): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\xampp\htdocs\RoomRentAPI\app\Controllers\Room.php(114): CodeIgniter\Model->update('1', Array)
+#8 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(925): App\Controllers\Room->update('1')
+#9 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+#10 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\RoomRentAPI\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\RoomRentAPI\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 14:34:49 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'0\', `updated_at` = \'2023-01-09 14:34:49\'
+WHERE `rooms`.`room_id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'0\', `updated_at` = \'2023-01-09 14:34:49\'
+WHERE `rooms`.`room_id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `rooms` SET `room_name` = \'Kelas 1.2B\', `floor` = \'2\', `building` = \'Gedung B\', `is_ready` = \'0\', `updated_at` = \'2023-01-09 14:34:49\'
+WHERE `rooms`.`room_id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `rooms` SET `room_name` = :room_name:, `floor` = :floor:, `building` = :building:, `is_ready` = :is_ready:, `updated_at` = :updated_at:
+WHERE `rooms`.`room_id` IN :rooms.room_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(362): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(887): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(721): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Room.php(114): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->update('1')
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:44:13 --> Argument 2 passed to CodeIgniter\Validation\Rules::is_unique() must be of the type string, null given, called in D:\xampp\htdocs\RoomRentAPI\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\Rules.php on line 126.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->is_unique('Kelas 1.1A', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('room_name', 'room_name', 'Kelas 1.1A', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Room.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->create()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:57:37 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\User.php on line 75.
+ 1 APPPATH\Controllers\User.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\User.php', 75, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\User->update('$1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:57:58 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\User.php on line 75.
+ 1 APPPATH\Controllers\User.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\User.php', 75, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\User->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 14:59:10 --> Undefined index: password
+in APPPATH\Controllers\User.php on line 89.
+ 1 APPPATH\Controllers\User.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: password', 'APPPATH\\Controllers\\User.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\User->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 15:19:43 --> Call to a member function getServer() on null
+in APPPATH\Controllers\Me.php on line 21.
+ 1 APPPATH\Controllers\User.php(77): App\Controllers\Me->index()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\User->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

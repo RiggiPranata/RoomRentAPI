@@ -58,6 +58,9 @@ $routes->group("api", function ($routes) {
     $routes->group('rents', ['filter' => 'otentikasi'], function ($routes) {
         $routes->get("/", 'Rent::index');
         $routes->get("(:any)", "Rent::show/$1");
+        $routes->post("/", "Rent::create");
+        $routes->put("(:any)", "Rent::update/$1");
+        $routes->delete("(:any)", "Rent::delete/$1");
     });
 });
 

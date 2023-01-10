@@ -56,8 +56,7 @@ class Room extends ResourceController
     {
         $model = new RoomModel();
         helper(['form']);
-        $user = new Me();
-        $profile = $user->index();
+
         $rules = [
             'room_name' => 'required|alpha_numeric_punct|is_unique[rooms.room_name,room_name]',
             'floor' => 'required|numeric',

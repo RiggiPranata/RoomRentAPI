@@ -1,0 +1,219 @@
+CRITICAL - 2023-01-12 07:16:14 --> Object of class DateTime could not be converted to number
+in APPPATH\Controllers\Rent.php on line 97.
+ 1 APPPATH\Controllers\Rent.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class DateTime could not be converted to number', 'APPPATH\\Controllers\\Rent.php', 97, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 07:16:45 --> Object of class DateTime could not be converted to string
+in APPPATH\Controllers\Rent.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->create()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-12 07:21:58 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `re...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 D:\xampp\htdocs\RoomRentAPI\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\RoomRentAPI\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(660): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\RoomRentAPI\app\Controllers\Rent.php(89): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(925): App\Controllers\Rent->create()
+#10 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+#11 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\RoomRentAPI\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\RoomRentAPI\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-01-12 07:21:58 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `rents` (`room_id`, `user_id`, `time_start`, `time_end`, `nama`, `no_telepon`, `remark`, `is_valid`, `created_at`, `updated_at`) VALUES (\'4\', \'1\', \'04:00:00\', \'05:00:00\', \'test\', \'089823412\', \'pinjam kelas a\', 0, \'2023-01-12\', \'2023-01-12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `rents` (`room_id`, `user_id`, `time_start`, `time_end`, `nama`, `no_telepon`, `remark`, `is_valid`, `created_at`, `updated_at`) VALUES (\'4\', \'1\', \'04:00:00\', \'05:00:00\', \'test\', \'089823412\', \'pinjam kelas a\', 0, \'2023-01-12\', \'2023-01-12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `rents` (`room_id`, `user_id`, `time_start`, `time_end`, `nama`, `no_telepon`, `remark`, `is_valid`, `created_at`, `updated_at`) VALUES (\'4\', \'1\', \'04:00:00\', \'05:00:00\', \'test\', \'089823412\', \'pinjam kelas a\', 0, \'2023-01-12\', \'2023-01-12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `rents` (`room_id`, `user_id`, `time_start`, `time_end`, `nama`, `no_telepon`, `remark`, `is_valid`, `created_at`, `updated_at`) VALUES (:room_id:, :user_id:, :time_start:, :time_end:, :nama:, :no_telepon:, :remark:, :is_valid:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(660): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Rent.php(89): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->create()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-12 07:22:13 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `re...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 D:\xampp\htdocs\RoomRentAPI\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\RoomRentAPI\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(660): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\RoomRentAPI\app\Controllers\Rent.php(89): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(925): App\Controllers\Rent->create()
+#10 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+#11 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\RoomRentAPI\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\RoomRentAPI\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-01-12 07:22:13 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `rents` (`room_id`, `user_id`, `time_start`, `time_end`, `nama`, `no_telepon`, `remark`, `is_valid`, `created_at`, `updated_at`) VALUES (\'4\', \'1\', \'04:00:00\', \'05:00:00\', \'test\', \'089823412\', \'pinjam kelas a\', 0, \'2023-01-12\', \'2023-01-12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `rents` (`room_id`, `user_id`, `time_start`, `time_end`, `nama`, `no_telepon`, `remark`, `is_valid`, `created_at`, `updated_at`) VALUES (\'4\', \'1\', \'04:00:00\', \'05:00:00\', \'test\', \'089823412\', \'pinjam kelas a\', 0, \'2023-01-12\', \'2023-01-12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `rents` (`room_id`, `user_id`, `time_start`, `time_end`, `nama`, `no_telepon`, `remark`, `is_valid`, `created_at`, `updated_at`) VALUES (\'4\', \'1\', \'04:00:00\', \'05:00:00\', \'test\', \'089823412\', \'pinjam kelas a\', 0, \'2023-01-12\', \'2023-01-12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `rents` (`room_id`, `user_id`, `time_start`, `time_end`, `nama`, `no_telepon`, `remark`, `is_valid`, `created_at`, `updated_at`) VALUES (:room_id:, :user_id:, :time_start:, :time_end:, :nama:, :no_telepon:, :remark:, :is_valid:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(660): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Rent.php(89): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->create()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 21:02:38 --> Call to undefined method App\Models\RentModel::getResult
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\Rent.php(33): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->show('22')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-12 21:03:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+WHERE `room_name` LIKE '%22%' ESCAPE '!'
+GROUP BY `room_name`' at line 3 in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\RoomRentAPI\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\RoomRentAPI\app\Controllers\Rent.php(33): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(925): App\Controllers\Rent->show('22')
+#8 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+#9 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\RoomRentAPI\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\RoomRentAPI\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-12 21:03:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+WHERE `room_name` LIKE '%22%' ESCAPE '!'
+GROUP BY `room_name`' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `rents`
+JOIN `Rooms` USING ()
+WHERE `room_name` LIKE \'%22%\' ESCAPE \'!\'
+GROUP BY `room_name`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `rents`
+JOIN `Rooms` USING ()
+WHERE `room_name` LIKE \'%22%\' ESCAPE \'!\'
+GROUP BY `room_name`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `rents`
+JOIN `Rooms` USING ()
+WHERE `room_name` LIKE \'%22%\' ESCAPE \'!\'
+GROUP BY `room_name`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `rents`
+JOIN `Rooms` USING ()
+WHERE `room_name` LIKE :room_name: ESCAPE \'!\'
+GROUP BY `room_name`', [...], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Rent.php(33): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->show('22')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-12 21:04:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+WHERE `room_name` LIKE '%Kelas 1.2B%' ESCAPE '!'
+GROUP BY `room_name`' at line 3 in D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\RoomRentAPI\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\RoomRentAPI\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\RoomRentAPI\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\RoomRentAPI\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\RoomRentAPI\app\Controllers\Rent.php(33): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(925): App\Controllers\Rent->show('Kelas 1.2B')
+#8 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+#9 D:\xampp\htdocs\RoomRentAPI\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\RoomRentAPI\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\RoomRentAPI\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-12 21:04:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+WHERE `room_name` LIKE '%Kelas 1.2B%' ESCAPE '!'
+GROUP BY `room_name`' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `rents`
+JOIN `Rooms` USING ()
+WHERE `room_name` LIKE \'%Kelas 1.2B%\' ESCAPE \'!\'
+GROUP BY `room_name`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `rents`
+JOIN `Rooms` USING ()
+WHERE `room_name` LIKE \'%Kelas 1.2B%\' ESCAPE \'!\'
+GROUP BY `room_name`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `rents`
+JOIN `Rooms` USING ()
+WHERE `room_name` LIKE \'%Kelas 1.2B%\' ESCAPE \'!\'
+GROUP BY `room_name`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `rents`
+JOIN `Rooms` USING ()
+WHERE `room_name` LIKE :room_name: ESCAPE \'!\'
+GROUP BY `room_name`', [...], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Rent.php(33): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->show('Kelas 1.2B')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 21:11:02 --> mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+in APPPATH\Controllers\Rent.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known. ', 'APPPATH\\Controllers\\Rent.php', 33, [...])
+ 2 APPPATH\Controllers\Rent.php(33): mysqli_connect('mysql', 'root', 'ROOTPATH\\public', 'roomrent')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->show('Kelas 1.2B')
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 21:55:42 --> Function name must be a string
+in APPPATH\Controllers\Rent.php on line 141.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Rent->update('48')
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rent))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 09:10:19 --> Call to undefined method App\Models\RoomModel::getResult
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\Room.php(32): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->show('kelas')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 09:10:47 --> Call to undefined method App\Models\RoomModel::getResult
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\Room.php(32): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Room->show('kelas')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

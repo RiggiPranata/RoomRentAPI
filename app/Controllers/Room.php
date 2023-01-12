@@ -25,11 +25,11 @@ class Room extends ResourceController
      *
      * @return mixed
      */
-    public function show($id = null)
+    public function show($key = null)
     {
 
         $model = new RoomModel();
-        $data = $model->getWhere(['room_id' => $id])->getResult();
+        $data = $model->like('room_name', $key)->orLike('building', $key)->findAll();
         if ($data) {
             return $this->respond($data);
         } else {

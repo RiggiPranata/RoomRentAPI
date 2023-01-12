@@ -97,7 +97,7 @@ class User extends ResourceController
             'status' => 200,
             'error' => null,
             'message' => [
-                'success' => 'User Updated'
+                'success' => 'User Data Updated'
             ]
         ];
         return $this->respondUpdated($response);
@@ -110,6 +110,20 @@ class User extends ResourceController
      */
     public function delete($id = null)
     {
-        //
+        $model = new UserModel();
+        $data = $model->find($id);
+        if ($data) {
+            $model->delete($id);
+            $response = [
+                'status' => 200,
+                'error' => null,
+                'message' => [
+                    'success' => 'Your Account has been deleted'
+                ]
+            ];
+            return $this->respondDeleted($response);
+        } else {
+            return $this->failNotFound("Data not Found");
+        }
     }
 }

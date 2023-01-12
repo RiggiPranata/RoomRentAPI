@@ -3,7 +3,12 @@
 namespace App\Controllers;
 
 use App\Models\RentModel;
+use App\Models\RoomModel;
 use CodeIgniter\RESTful\ResourceController;
+use CodeIgniter\Database\MySQLi\Builder;
+
+
+date_default_timezone_set("Asia/Jakarta");
 
 class Rent extends ResourceController
 {
@@ -15,7 +20,8 @@ class Rent extends ResourceController
     public function index()
     {
         $rents = new RentModel();
-        return $this->respond(['rent' => $rents->findAll()], 200);
+        $data = $this->respond(['rent' => $rents->orderBy('id', "DESC")->findAll()], 200);
+        return $data;
     }
 
     /**
@@ -26,7 +32,9 @@ class Rent extends ResourceController
     public function show($id = null)
     {
         $model = new RentModel();
-        $data = $model->getWhere(['id' => $id])->getResult();
+        $data = $model->getWhere(['user_id' => $id])->getResult();
+
+
         if ($data) {
             return $this->respond($data);
         } else {
@@ -58,7 +66,7 @@ class Rent extends ResourceController
             'user_id' => 'required|numeric',
             'time_start' => 'required',
             'time_end' => 'required',
-            // 'date' => 'required',
+            'date' => 'required',
             'nama' => 'required|alpha_numeric_space',
             'no_telepon' => 'required|alpha_numeric_space',
             'remark' => 'required|alpha_numeric_punct',
@@ -66,33 +74,41 @@ class Rent extends ResourceController
         ];
         if (!$this->validate($rules)) return $this->fail($this->validator->getErrors());
         $endTime = $this->request->getVar('time_end');
-        $expTime = time() == $endTime;
-        if ($expTime) {
+        $timeNow = date("H:i:s");
+        $expTime = $timeNow > $endTime;
+        if ($expTime == true) {
             $exp = 1;
         } else {
             $exp = 0;
         }
-        $formatDate = date('Y-m-d', time());
+        $Stringdate = $this->request->getVar('date');
+        $date = date("Y-m-d", strtotime($Stringdate));
+
         $data = [
             'room_id' => $this->request->getVar('room_id'),
             'user_id' => $this->request->getVar('user_id'),
             'time_start' => $this->request->getVar('time_start'),
             'time_end' => $endTime,
-            'date' => $formatDate,
+            'date' => $date,
             'nama' => $this->request->getVar('nama'),
             'no_telepon' => $this->request->getVar('no_telepon'),
             'remark' => $this->request->getVar('remark'),
             'is_valid' => $exp,
         ];
-        $model->insert($data);
-        $response = [
-            'status' => 201,
-            'error' => null,
-            'message' => [
-                'success' => 'Rent Room Successfully'
-            ]
-        ];
-        return $this->respondCreated($response);
+
+        if ($exp != 0) {
+            return $this->fail("Choose another time", 500);
+        } else {
+            $model->insert($data);
+            $response = [
+                'status' => 201,
+                'error' => null,
+                'message' => [
+                    'success' => 'Rent Room Successfully'
+                ]
+            ];
+            return $this->respondCreated($response);
+        }
     }
 
     /**
@@ -127,35 +143,40 @@ class Rent extends ResourceController
         ];
         if (!$this->validate($rules)) return $this->fail($this->validator->getErrors());
         $input = $this->request->getRawInput();
-        $endTimeUpdate = $this->request->getVar('time_end');
-        $expTimeUpdate = time() == $endTimeUpdate;
-        if ($expTimeUpdate) {
+        $endTime = $input['time_end'];
+        $timeNow = date("H:i:s");
+        $expTime = $timeNow > $endTime;
+        if ($expTime == true) {
             $exp = 1;
         } else {
             $exp = 0;
         }
-        $tanggal = time();
-        $formatDate = date('Y-m-d');
+        $Stringdate = $input['date'];
+        $date = date("Y-m-d", strtotime($Stringdate));
         $data = [
             'room_id' => $input['room_id'],
             'user_id' => $input['user_id'],
             'time_start' => $input['time_start'],
             'time_end' => $input['time_end'],
-            'date' => $formatDate,
+            'date' => $date,
             'nama' => $input['nama'],
             'no_telepon' => $input['no_telepon'],
             'remark' => $input['remark'],
             'is_valid' => $exp,
         ];
-        $model->update($id, $data);
-        $response = [
-            'status' => 200,
-            'error' => null,
-            'message' => [
-                'success' => 'Rent Room Updated'
-            ]
-        ];
-        return $this->respondUpdated($response);
+        if ($exp != 0) {
+            return $this->fail("Choose another time", 500);
+        } else {
+            $model->update($id, $data);
+            $response = [
+                'status' => 200,
+                'error' => null,
+                'message' => [
+                    'success' => 'Rent Room Updated'
+                ]
+            ];
+            return $this->respondUpdated($response);
+        }
     }
 
     /**

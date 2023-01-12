@@ -50,10 +50,16 @@ class Login extends ResourceController
                 'email' => $user['email'],
             ]
         );
+        $response = [
+            'status' => 200,
+            'error' => null,
+            'message' => [
+                'success' => 'Login Success'
+            ],
+            'token' => $token = JWT::encode($payload, $key, "HS256")
+        ];
 
-        $token = JWT::encode($payload, $key, "HS256");
-
-        return $this->respond($token);
+        return $this->respond($response);
     }
 
     /**

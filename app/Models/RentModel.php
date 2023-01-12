@@ -14,7 +14,7 @@ class RentModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['room_id', 'user_id', 'time_start', 'time_end', 'date,', 'nama', 'no_telepon', 'remark', 'is_valid'];
+    protected $allowedFields    = ['room_id', 'user_id', 'time_start', 'time_end', "date", 'nama', 'no_telepon', 'remark', 'is_valid'];
 
     // Dates
     protected $useTimestamps = false;

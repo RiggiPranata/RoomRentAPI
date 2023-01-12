@@ -37,8 +37,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 // <!-- $routes->get('/', 'Home::index'); -->
 
-$routes->get('/', 'Home::index', ['filter' => 'otentikasi']);
-$routes->get('me', 'Me::index', ['filter' => 'otentikasi']);
+// $routes->get('/', 'Home::index', ['filter' => 'otentikasi']);
+// $routes->get('me', 'Me::index', ['filter' => 'otentikasi']);
 
 $routes->group("api", function ($routes) {
     $routes->post('register', 'Register::index');
@@ -47,6 +47,7 @@ $routes->group("api", function ($routes) {
         $routes->get("/", 'User::index');
         $routes->get("(:any)", "User::show/$1");
         $routes->put("(:any)", "User::update/$1");
+        $routes->delete("(:any)", "User::delete/$1");
     });
     $routes->group('rooms', ['filter' => 'otentikasi'], function ($routes) {
         $routes->get("/", 'Room::index');
@@ -65,9 +66,6 @@ $routes->group("api", function ($routes) {
 });
 
 
-// $routes->resource('registration');
-// $routes->resource('login');
-// $routes->post('/login', 'Login::index');
 
 /*
  * --------------------------------------------------------------------
